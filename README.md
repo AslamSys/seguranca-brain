@@ -2,7 +2,7 @@
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -345,7 +345,7 @@ seguranca-brain:
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -362,7 +362,7 @@ docker exec seguranca-brain ollama pull qwen:3b-vision-q4_K_M
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -474,7 +474,7 @@ ASSISTANT:
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -491,7 +491,7 @@ seguranca_brain_frames_analyzed_per_second
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -508,7 +508,7 @@ seguranca_brain_classification_total{type="normal|alerta|critico|emergencia"}
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -525,7 +525,7 @@ seguranca_brain_inference_duration_seconds
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -587,7 +587,7 @@ Optimization:
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -604,7 +604,7 @@ docker run --rm --runtime=nvidia nvidia/cuda:12.1-base nvidia-smi
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -625,7 +625,7 @@ sudo systemctl restart docker
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -640,7 +640,7 @@ sudo systemctl restart docker
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -656,7 +656,7 @@ sudo systemctl restart docker
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -673,7 +673,7 @@ ollama pull qwen:1.5b-vision-q4_K_M  # 1.5B em vez de 3B
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -693,7 +693,7 @@ FRAME_SKIP=5  # Analisa 1 a cada 5 frames (6 FPS)
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -710,7 +710,7 @@ CONFIDENCE_THRESHOLD=0.8  # Aumentar de 0.6 para 0.8
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -727,7 +727,7 @@ ALERT_COOLDOWN_SECONDS=300  # Máx 1 alerta a cada 5 min por câmera
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
@@ -742,7 +742,7 @@ ALERT_COOLDOWN_SECONDS=300  # Máx 1 alerta a cada 5 min por câmera
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca%20-%20(jetson-orin-nano)/README.md)** → **seguranca-brain**
 
 ### Containers Relacionados (seguranca)
 - [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
