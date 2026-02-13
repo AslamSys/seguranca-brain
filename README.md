@@ -1,5 +1,19 @@
 # 🧠 Seguranca Brain (LLM Vision)
 
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
+
 **Container:** `seguranca-brain`  
 **Ecossistema:** Segurança  
 **Hardware:** Jetson Orin Nano 8GB  
@@ -328,9 +342,37 @@ seguranca-brain:
 ### Inicialização do Modelo
 ```bash
 # Baixar modelo Qwen 3B Vision
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 docker exec seguranca-brain ollama pull qwen:3b-vision-q4_K_M
 
 # Testar inferência com imagem
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 curl -X POST http://localhost:11434/api/generate \
   -d '{
     "model": "qwen:3b-vision-q4_K_M",
@@ -429,15 +471,71 @@ ASSISTANT:
 ### Métricas Prometheus
 ```python
 # Frames analisados por segundo
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 seguranca_brain_frames_analyzed_per_second
 
 # Distribuição de classificações
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 seguranca_brain_classification_total{type="normal|alerta|critico|emergencia"}
 
 # Latência de análise
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 seguranca_brain_inference_duration_seconds
 
 # Taxa de falsos positivos (feedback)
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 seguranca_brain_false_positives_total
 ```
 
@@ -486,9 +584,37 @@ Optimization:
 ### Problema: GPU não detectada
 ```bash
 # Verificar runtime NVIDIA
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 docker run --rm --runtime=nvidia nvidia/cuda:12.1-base nvidia-smi
 
 # Instalar NVIDIA Container Toolkit
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 sudo apt-get install -y nvidia-container-toolkit
 sudo systemctl restart docker
 ```
@@ -496,25 +622,137 @@ sudo systemctl restart docker
 ### Problema: Alta latência (>500ms)
 ```bash
 # Reduzir resolução de frames
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 # 1080p → 720p (75% mais rápido)
 
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
+
 # Usar modelo menor
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 ollama pull qwen:1.5b-vision-q4_K_M  # 1.5B em vez de 3B
 
 # Aumentar frame skip
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 FRAME_SKIP=5  # Analisa 1 a cada 5 frames (6 FPS)
 ```
 
 ### Problema: Muitos falsos positivos
 ```bash
 # Ajustar threshold de confiança
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 CONFIDENCE_THRESHOLD=0.8  # Aumentar de 0.6 para 0.8
 
 # Adicionar cooldown
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 ALERT_COOLDOWN_SECONDS=300  # Máx 1 alerta a cada 5 min por câmera
 
 # Refinar prompt system
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 # Adicionar exemplos de falsos positivos ao contexto
+
+## 🔗 Navegação
+
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Segurança (Jetson Orin Nano)](https://github.com/AslamSys/_system/blob/main/hardware/seguranca/README.md)** → **seguranca-brain**
+
+### Containers Relacionados (seguranca)
+- [seguranca-camera-stream-manager](https://github.com/AslamSys/seguranca-camera-stream-manager)
+- [seguranca-yolo-detector](https://github.com/AslamSys/seguranca-yolo-detector)
+- [seguranca-face-recognition](https://github.com/AslamSys/seguranca-face-recognition)
+- [seguranca-event-analyzer](https://github.com/AslamSys/seguranca-event-analyzer)
+- [seguranca-alert-manager](https://github.com/AslamSys/seguranca-alert-manager)
+- [seguranca-video-recorder](https://github.com/AslamSys/seguranca-video-recorder)
+
+---
 ```
 
 ---
