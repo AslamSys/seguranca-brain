@@ -766,7 +766,119 @@ ALERT_COOLDOWN_SECONDS=300  # Máx 1 alerta a cada 5 min por câmera
 
 ---
 
-## 🔄 Changelog
+## �️ Banco de Eventos — Fonte Primária de Verdade
+
+Todos os eventos detectados pelo pipeline ao vivo (YOLO → face-recognition → event-analyzer) são **persistidos no PostgreSQL + TimescaleDB**. O banco é a fonte primária de consulta — nunca reanalisamos câmeras ou clips para responder perguntas que já passaram ao vivo.
+
+### Esquema de evento
+```json
+{
+  "event_id": "evt_20240415_021500_cam1",
+  "timestamp": "2024-04-15T02:15:00Z",
+  "camera_id": "cam_1",
+  "zone": "entrada_principal",
+  "classification": "CRÍTICO",
+  "description": "Pessoa desconhecida aproximando-se da porta principal na madrugada",
+  "entities": [
+    { "type": "person", "known": false, "identity": null, "activity": "approaching_door" }
+  ],
+  "clip_path": "/nas/security/2024-04-15/cam1_021500_evt.mp4",
+  "thumbnail_path": "/nas/security/2024-04-15/cam1_021500_thumb.jpg",
+  "alert_sent": true
+}
+```
+
+### NATS Topics — Interface com Mordomo
+```javascript
+// Mordomo consulta eventos por linguagem natural
+Topic: "seguranca.query.events"
+Payload: {
+  "request_id": "req_123",
+  "query": "O que aconteceu na garagem ontem à noite?",
+  "filters": {
+    "camera_id": "cam_2",           // opcional
+    "time_range": { "start": "...", "end": "..." },
+    "classification": ["ALERTA", "CRÍTICO", "EMERGÊNCIA"]
+  }
+}
+
+// Resposta: resumo textual + lista de eventos
+Topic: "seguranca.query.response"
+Payload: {
+  "request_id": "req_123",
+  "summary": "2 eventos detectados: 23h14 pessoa desconhecida, 23h31 veículo parado",
+  "events": [
+    {
+      "event_id": "evt_...",
+      "timestamp": "2024-04-14T23:14:00Z",
+      "description": "Pessoa desconhecida próxima ao portão",
+      "clip_path": "/nas/security/.../clip.mp4"
+    }
+  ]
+}
+
+// Mordomo pede reprodução de clip na TV
+Topic: "seguranca.playback.clip"
+Payload: {
+  "event_id": "evt_...",
+  "clip_path": "/nas/security/.../clip.mp4",
+  "target_device": "tv_sala"
+}
+```
+
+---
+
+## 🔍 Detecção Automática de Gaps e Re-análise
+
+O `seguranca-brain` monitora continuamente a presença de eventos no banco por câmera. Se detectar ausência de registros por mais do que o tempo configurado, assume que o YOLO pode ter sofrido queda e dispara re-análise do NAS automaticamente.
+
+### Fluxo de gap detection
+```
+[seguranca-brain]
+  ↓  Consulta banco a cada 5 minutos
+  ↓  Detecta gap > GAP_THRESHOLD (padrão: 10 min)
+  ↓  Busca clips gravados pelo seguranca-video-recorder para o período
+  ↓  Publica "seguranca.analyze.clip" para cada clip do período
+  ↓  seguranca-yolo-detector processa arquivo (não stream)
+  ↓  Eventos retroativos gravados no banco com flag "source: retrospective"
+```
+
+### NATS Topics — Re-análise
+```javascript
+// Solicitar análise de clip gravado no NAS
+Topic: "seguranca.analyze.clip"
+Payload: {
+  "request_id": "retro_cam1_2300_2310",
+  "camera_id": "cam_1",
+  "clip_path": "/nas/security/2024-04-14/cam1_2300.mp4",
+  "time_range": {
+    "start": "2024-04-14T23:00:00Z",
+    "end": "2024-04-14T23:10:00Z"
+  },
+  "source": "gap_recovery"  // ou "manual"
+}
+
+// Resultado da re-análise
+Topic: "seguranca.analyze.clip.result"
+Payload: {
+  "request_id": "retro_cam1_2300_2310",
+  "events_found": 2,
+  "events": [ /* mesma estrutura de evento normal */ ],
+  "processing_time_seconds": 45
+}
+```
+
+### Configuração
+```yaml
+environment:
+  - GAP_THRESHOLD_MINUTES=10       # Ausência > 10 min dispara re-análise
+  - GAP_CHECK_INTERVAL_SECONDS=300 # Verifica a cada 5 minutos
+  - RETROSPECTIVE_MAX_HOURS=24     # Não re-analisa mais de 24h atrás
+```
+
+---
+
+## �🔄 Changelog
 
 ### v1.0.0 (2024-11-27)
 - ✅ Implementação Qwen 3B Vision com CUDA
